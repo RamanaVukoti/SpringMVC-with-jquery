@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	<context:annotation-config />
+
+	<context:component-scan base-package="controllers" />
+	<!-- <context:Annotation-config/> -->
+	<!-- <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/> 
+		<bean name="/Logout.html" class="controllers.MainController" /> -->
+
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename" value="prope.properties" />
+	</bean>
+
+
+	<bean id="mainController" class="controllers.MainController">
+		<property name="loginService" ref="loginService"></property>
+		<property name="registrationService" ref="registrationService"></property>
+	</bean>
+
+
+	<bean id="loginService" class="services.LoginService">
+		<property name="loginInterface" ref="loginImplementation"></property>
+	</bean>
+	<bean id="registrationService" class="services.RegistrationService">
+		<property name="registrtionInterface" ref="registrionImplementation"></property>
+	</bean>
+	<bean id="loginImplementation" class="daoImplementation.LoginImplementation">
+		<property name="jdbcTemplate" ref="jdbcConnectionClass"></property>
+	</bean>
+	<bean id="registrionImplementation" class="daoImplementation.RegistrationImplmentation">
+		<property name="jdbcTemplate" ref="jdbcConnectionClass"></property>
+	</bean>
+
+	<bean id="cartController" class="controllers.CartController">
+		<property name="cartServices" ref="cartServices"></property>
+		<property name="itemViewService" ref="itemViewService"></property>
+		<property name="viewCartService" ref="viewCartService"></property>
+
+
+	</bean>
+	<bean id="cartServices" class="services.CartServices">
+		<property name="cartInterface" ref="cartImplementation"></property>
+	</bean>
+
+	<bean id="cartImplementation" class="daoImplementation.CartImplementation">
+		<property name="jdbcTemplate" ref="jdbcConnectionClass"></property>
+	</bean>
+
+	<bean id="itemViewService" class="services.ItemViewService">
+		<property name="itemViewInterface" ref="itemViewImplementation"></property>
+	</bean>
+
+	<bean id="itemViewImplementation" class="daoImplementation.ItemViewImplementation">
+		<property name="jdbcTemplate" ref="jdbcConnectionClass"></property>
+	</bean>
+
+	<bean id="viewCartService" class="services.ViewCartService">
+		<property name="ViewCart" ref="viewCartImpl"></property>
+	</bean>
+
+	<bean id="viewCartImpl" class="daoImplementation.ViewCartImpl">
+		<property name="jdbcTemplate" ref="jdbcConnectionClass"></property>
+	</bean>
+
+
+
+	<bean id="searchController" class="controllers.SearchController">
+		<property name="searchItemService" ref="searchItemService"></property>
+
+	</bean>
+
+	<bean id="searchItemService" class="services.SearchItemService">
+		<property name="searchItemInterface" ref="searchItemInterface"></property>
+	</bean>
+	
+	<bean id="searchItemInterface" class="daoImplementation.SearchItemImpl">
+		<property name="jdbcTemplate" ref="jdbcConnectionClass"></property>
+	</bean>
+
+	<bean id="jdbcConnectionClass" scope="singleton"
+		class="org.springframework.jdbc.core.JdbcTemplate">
+		<constructor-arg>
+			<ref bean="driverManager" />
+		</constructor-arg>
+	</bean>
+
+
+
+	<bean id="driverManager"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+
+		<property name="driverClassName" value="sun.jdbc.odbc.JdbcOdbcDriver"></property>
+		<property name="url" value="jdbc:odbc:MyDataBase"></property>
+		<property name="username" value="" />
+		<property name="password" value="" />
+	</bean>
+
+
+
+</beans>

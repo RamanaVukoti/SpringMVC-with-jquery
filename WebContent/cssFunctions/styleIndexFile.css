@@ -1,0 +1,671 @@
+#container {
+	position: absolute;
+	width: 1000px;
+	height: 580px;
+	background-color: #004C99;
+}
+
+#aboveHeader {
+	position: relative;
+	width: 1000px;
+	height: 100px;
+	background-color: #004C99;
+	width: 1000px;
+}
+
+#itemsContent,#itemContentImage {
+	position: absolute;
+	width: 720px;
+	height: 480px;
+	background-color: #CCFFFF;
+	border-radius: 20px;
+}
+
+#addContainer {
+	position: absolute;
+	margin-left: 720px;
+	width: 270px;
+	height: 470px;
+	background-color: #004C99;
+	padding: 5px;
+	border-radius: 20px;
+}
+
+#companyImage {
+	position: absolute;
+	margin-left: 1px;
+	width: 100px;
+	margin-top: 0px;
+	height: 100px;
+}
+
+#logo {
+	height: 100px;
+	width: 180px;
+}
+
+#menuBar {
+	position: absolute;
+	margin-left: 180px;
+	width: 600px;
+	height: 50px;
+	margin-top: 35px;
+	border-color: green;
+	border: ridge;
+	margin-top: 35px;
+	font-size: 16px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 3px 2px 3px #333333;
+	background-color: #8AD9FF;
+	border-radius: 20px;
+}
+
+#menuBar ul {
+	height: auto;
+	padding: 8px 0px;
+	margin: 0px;
+	color: red;
+}
+
+#menuBar li {
+	display: inline;
+	padding: 20px;
+}
+
+#menuBar a {
+	text-decoration: none;
+	color: #00F;
+	padding: 8px 8px 8px 8px;
+	-webkit-box-shadow: 7px 7px 5px 0px rgba(40, 20, 50, 0.75);
+	-moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	-ms-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+#menuBar a:HOVER {
+	color: #E8233D;
+}
+
+#serachBox {
+	position: absolute;
+	margin-left: 800px;
+	margin-top: 60px;
+	width: 170px;
+	height: 50px;
+	border-color: aqua;
+}
+
+#searchButton {
+	position: absolute;
+	left: 87%;
+	top: 29%;
+	background-color: #33FFFF;
+	border-style: outset;
+	border-color: red;
+	border-radius: 5px;
+}
+
+#serchText {
+	border-radius: 8px 10px 10px 10px;
+	-moz-border-radius: 8px 10px 10px 10px;
+	-webkit-border-radius: 8px 10px 10px 10px;
+	border: 0px solid #000000;
+	position: absolute;
+	margin-top: 15px;
+	color: #FF0000;
+}
+
+#smallLinks {
+	border: groove;
+	position: absolute;
+	margin-left: 485px;
+	margin-top: 5px;
+	width: auto;
+	font-size: 15px;
+	text-align: center;
+	border-radius: 7px;
+	height: 20px;
+}
+
+#smallLinks ul {
+	height: auto;
+	padding: 2px 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+#smallLinks  li {
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+}
+
+#smallLinks a {
+	text-decoration: none;
+	color: #00FFFF;
+	/* padding: 1px 1px 1px 1px;
+	margin: 1px 1px 1px 1px; */
+}
+
+#smallLinks a:HOVER {
+	color: #D51A1A;
+}
+
+.linksLabel {
+	position: relative;
+	color: #D51A1A;
+	margin-left: 1px;
+}
+
+#cornerImage {
+	position: absolute;
+	margin-left: 900px;
+	margin-top: 0px;
+}
+
+.contentModel {
+	position: absolute;
+	margin-left: 0px;
+	height: 475px;
+	width: 715px;
+	font-size: 15px;
+	display: none;
+	background-color: white;
+	border: ridge;
+	border-color: green;
+	border-radius: 20px;
+	background-color: #E5FFCC;
+}
+/* #itemContentImage{
+position: absolute;
+	margin-left: 10px;
+	height: 450px;
+	width: 735px;
+	font-size: 15px;
+	display: none;
+	background-color: white;
+	border: ridge;
+	border-color: green;
+	border-radius: 15px;
+} */
+.linksInItemContent ul {
+	list-style-type: none;
+}
+
+.linksInItemContent a {
+	text-decoration: none;
+	color: red;
+}
+
+.linksInItemContent li {
+	padding: 4px;
+	margin: 5px;
+}
+
+.linksInItemContent a:HOVER {
+	color: #006600;
+	font-style: inherit;
+	font-size: 20px;
+}
+
+#mobiles,#clothing,#clothingWomen {
+	position: absolute;
+	/* padding-left: 20px; */
+	margin-left: 20px;
+	width: 30%;
+}
+
+#computers,#footWear,#footWearWomen {
+	position: absolute;
+	/* padding-left:20px; */
+	margin-left: 150px;
+	width: 30%;
+}
+
+#home,#watches,#watchesWomen {
+	position: absolute;
+	margin-left: 280px;
+	width: 30%;
+}
+
+#audio-video,#sunGlasses,#bagsWomen {
+	position: absolute;
+	margin-left: 410px;
+	width: 30%;
+}
+
+#fragrencesWomen {
+	position: absolute;
+	margin-left: 580px;
+	width: 30%;
+}
+
+.headingLabel {
+	position: relative;
+	/*  top: 20px;  */
+	font-size: 20px;
+	font-family: cursive;
+	font-style: oblique;
+	margin-left: 50px;
+	color: blue;
+	text-align: center;
+}
+
+.waterMark {
+	color: rgb(255, 204, 229);
+	position: fixed;
+	font-size: 150px;
+	top: 40%;
+	margin-left: 5px;;
+	width: 55%;
+	text-align: center;
+	/* -webkit-transform: rotate(35deg);
+	-moz-transform: rotate(35deg); */
+	/* -ms-transform:rotate(35deg); */
+	text-align: center;
+	text-align: center;
+	width: 55%;
+}
+
+#noStock {
+	font-size: 50px;
+	color: #CC6600;
+	position: fixed;
+	top: 25%;
+	left: 200px;
+	text-align: center;
+}
+
+#addImageOne,#addImageTwo,#addImageThree {
+	width: 270px;
+	height: 150px;
+	border-radius: 10px;
+}
+
+# /* registerHere{
+	position: absolute;
+	display:none;
+
+	width: 720px;
+	height: 480px;
+	background-color: #CCFFFF;
+	border-radius: 20px;
+} */
+#user2 {
+	display: none;
+}
+
+#loginId {
+	color: red;
+}
+
+.logedUser2 {
+	color: red;
+}
+
+#commonMessage {
+	position: absolute;
+	margin-left: 25%;
+	margin-top: 25%;
+	color: red
+}
+
+#h4 {
+	position: absolute;
+	margin-left: 30%;
+	margin-top: 5%;
+	color: #990099;
+}
+
+#images {
+	position: absolute;
+	display: none;
+}
+
+.imagesHeadLabel {
+	color: #8400A6;
+	font-size: 25px;
+	font-family: monospace;
+	font-style: italic;
+	font-variant: small-caps;
+	font-size: 25px;
+}
+
+div.imagesClass {
+	margin: 5px;
+	padding: 5px;
+	border: 2px solid #0000ff;
+	height: auto;
+	width: auto;
+	float: left;
+	text-align: center;
+}
+
+div.imagesClass img {
+	display: inline;
+	display: inline;
+	margin: 5px;
+	border: 1px solid #ffffff;
+}
+
+div.imagesClass a:hover img {
+	border: 1px ridge green;
+}
+/* .imagesClass:HOVER {
+	-ms-transform:scale(1.5);
+-webkit-transform:scale(1.1); Webkit: Scale up image to 1.2x original size
+-moz-transform:scale(1.1); Mozilla scale version
+-o-transform:scale(1.1); Opera scale version
+box-shadow:0px 0px 30px gray; CSS3 shadow: 30px blurred shadow all around image
+-webkit-box-shadow:0px 0px 30px gray; Safari shadow version
+-moz-box-shadow:0px 0px 30px gray; Mozilla shadow version
+}
+ */
+/* .indivisualImage:HOVER{
+ -ms-transform:scale(1.4);
+ 
+ } */
+.imagesClass img:HOVER {
+	-ms-transform: scale(1.5);
+}
+
+div.desc {
+	text-align: center;
+	font-weight: normal;
+	width: 120px;
+	margin: 5px;
+}
+
+#userOptions ul {
+	border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-ms-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border: 0px solid #000000;
+	list-style-type: none;
+	text-decoration: none;
+	height: auto;
+	padding: 2px 0px;
+	margin: 0px;
+}
+
+#userOptions {
+	position: absolute;
+	margin-left: 830px;
+	margin-top: 24px;
+	z-index: 5;
+	display: none;
+}
+
+#userOptions li {
+	text-decoration: none;
+	background: -webkit-linear-gradient(top, rgba(212, 228, 239, 1) 0%,
+		rgba(212, 228, 239, 1) 31%, rgba(134, 174, 204, 1) 54%,
+		rgba(134, 174, 204, 1) 100% );
+	background: -o-linear-gradient(top, rgba(212, 228, 239, 1) 0%,
+		rgba(212, 228, 239, 1) 31%, rgba(134, 174, 204, 1) 54%,
+		rgba(134, 174, 204, 1) 100% );
+	background: -ms-linear-gradient(top, rgba(212, 228, 239, 1) 0%,
+		rgba(212, 228, 239, 1) 31%, rgba(134, 174, 204, 1) 54%,
+		rgba(134, 174, 204, 1) 100% );
+	background: linear-gradient(to bottom, rgba(212, 228, 239, 1) 0%,
+		rgba(212, 228, 239, 1) 31%, rgba(134, 174, 204, 1) 54%,
+		rgba(134, 174, 204, 1) 100% );
+	filter: progid :       DXImageTransform.Microsoft.gradient (      
+		  startColorstr =   
+		   '#d4e4ef', endColorstr =       '#86aecc', GradientType =       0 );
+
+	/*  background-color: aqua;
+	border: 1px groove;
+	border-color: #FF9900; */
+}
+
+#userOptions li:HOVER {
+	background: rgba(252, 236, 252, 1);
+	background: -moz-linear-gradient(top, rgba(252, 236, 252, 1) 0%,
+		rgba(252, 236, 252, 1) 8%, rgba(251, 166, 225, 1) 50%,
+		rgba(253, 137, 215, 1) 51%, rgba(255, 124, 216, 1) 52%,
+		rgba(255, 124, 216, 1) 100% );
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252, 236,
+		252, 1) ), color-stop(8%, rgba(252, 236, 252, 1) ),
+		color-stop(50%, rgba(251, 166, 225, 1) ),
+		color-stop(51%, rgba(253, 137, 215, 1) ),
+		color-stop(52%, rgba(255, 124, 216, 1) ),
+		color-stop(100%, rgba(255, 124, 216, 1) ) );
+	background: -webkit-linear-gradient(top, rgba(252, 236, 252, 1) 0%,
+		rgba(252, 236, 252, 1) 8%, rgba(251, 166, 225, 1) 50%,
+		rgba(253, 137, 215, 1) 51%, rgba(255, 124, 216, 1) 52%,
+		rgba(255, 124, 216, 1) 100% );
+	background: -o-linear-gradient(top, rgba(252, 236, 252, 1) 0%,
+		rgba(252, 236, 252, 1) 8%, rgba(251, 166, 225, 1) 50%,
+		rgba(253, 137, 215, 1) 51%, rgba(255, 124, 216, 1) 52%,
+		rgba(255, 124, 216, 1) 100% );
+	background: -ms-linear-gradient(top, rgba(252, 236, 252, 1) 0%,
+		rgba(252, 236, 252, 1) 8%, rgba(251, 166, 225, 1) 50%,
+		rgba(253, 137, 215, 1) 51%, rgba(255, 124, 216, 1) 52%,
+		rgba(255, 124, 216, 1) 100% );
+	background: linear-gradient(to bottom, rgba(252, 236, 252, 1) 0%,
+		rgba(252, 236, 252, 1) 8%, rgba(251, 166, 225, 1) 50%,
+		rgba(253, 137, 215, 1) 51%, rgba(255, 124, 216, 1) 52%,
+		rgba(255, 124, 216, 1) 100% );
+	filter: progid :       DXImageTransform.Microsoft.gradient (      
+		  startColorstr =   
+		   '#fcecfc', endColorstr =       '#ff7cd8', GradientType =       0 );
+}
+
+#userOptions a:HOVER { /* color: orange; */
+	font-style: italic;
+}
+
+.shopButton { /* position: absolute; */
+	background-color: lime;
+	/* margin-left: 45%; */
+	/* width: auto; */
+}
+
+/* ---------------------------------cart images------------------------------------------ */
+#displayPage {
+	-webkit-border-top-left-radius: 200px;
+	-webkit-border-top-right-radius: 200px;
+	-moz-border-radius-topleft: 200px;
+	-moz-border-radius-topright: 200px;
+	-ms-border-top-left-radius: 200px;
+	-ms-border-top-right-radius: 200px;
+	border-top-left-radius: 200px;
+	border-top-right-radius: 200px;
+}
+
+#itemImage {
+	position: absolute;
+	margin-left: 25px;
+	border: 2px solid red;
+	border-radius: 9px;
+	width: 300px;
+	height: 400px;
+}
+
+#itemDesc {
+	position: absolute;
+	border: 2px solid red;
+	-moz-border-radius-topleft: 90px;
+	-webkit-border-top-left-radius: 90px;
+	-ms-border-top-left-radius: 90px;
+	border-top-left-radius: 90px;
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-ms-border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-ms-border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 90px;
+	-webkit-border-bottom-left-radius: 90px;
+	-ms-border-top-left-radius: 90px;
+	border-bottom-left-radius: 90px;
+	width: 350px;
+	height: 300px;
+	margin-top: 75px;
+	margin-left: 360px;
+	background-color: #CCFF99;
+}
+
+#itemContent {
+	position: absolute;
+	margin-top: 30px;
+}
+
+.itemLabel {
+	position: absolute;
+	margin-left: 90px;
+	width: 200px;
+	color: red;
+	font-family: monospace;
+	font-size: 25px;
+	font-size-adjust: inherit;
+	font-stretch: ultra-condensed;
+	font-variant: normal;
+	font-weight: bold;
+	text-align: center;
+}
+
+.labelDesc {
+	position: absolute;
+	color: #6666FF;
+	margin-left: 45px;
+	text-align: center;
+	font-size: 20px;
+	font-style: italic;
+}
+
+#modelLabel {
+	position: absolute;
+	margin-top: 5px;
+}
+
+#itemAvauil,#avilLabel {
+	position: absolute;
+	margin-top: 70px;
+	font-style: italic;
+}
+
+#itemCost,#costLabel {
+	position: absolute;
+	margin-top: 150px;
+}
+
+.shopButton2 {
+	background-color: lime;
+	position: absolute;
+	margin-top: 240px;
+	margin-left: 140px;
+}
+
+#itemSucMes {
+	color: #336600;
+	margin-left: 280px;
+	font-size: 25px;
+	text-decoration: blink;
+	font-style: oblique;
+	font-weight: bold;
+}
+
+#sucessParam {
+	display: : none;
+}
+
+.loginDialog .ui-dialog-titlebar {
+	background: rgba(164, 179, 87, 1);
+	background: -moz-linear-gradient(top, rgba(164, 179, 87, 1) 0%,
+		rgba(164, 179, 87, 1) 37%, rgba(117, 137, 12, 1) 58%,
+		rgba(117, 137, 12, 1) 100% );
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(164, 179, 87
+		, 1) ), color-stop(37%, rgba(164, 179, 87, 1) ),
+		color-stop(58%, rgba(117, 137, 12, 1) ),
+		color-stop(100%, rgba(117, 137, 12, 1) ) );
+	background: -webkit-linear-gradient(top, rgba(164, 179, 87, 1) 0%,
+		rgba(164, 179, 87, 1) 37%, rgba(117, 137, 12, 1) 58%,
+		rgba(117, 137, 12, 1) 100% );
+	background: -o-linear-gradient(top, rgba(164, 179, 87, 1) 0%,
+		rgba(164, 179, 87, 1) 37%, rgba(117, 137, 12, 1) 58%,
+		rgba(117, 137, 12, 1) 100% );
+	background: -ms-linear-gradient(top, rgba(164, 179, 87, 1) 0%,
+		rgba(164, 179, 87, 1) 37%, rgba(117, 137, 12, 1) 58%,
+		rgba(117, 137, 12, 1) 100% );
+	background: linear-gradient(to bottom, rgba(164, 179, 87, 1) 0%,
+		rgba(164, 179, 87, 1) 37%, rgba(117, 137, 12, 1) 58%,
+		rgba(117, 137, 12, 1) 100% );
+	filter: progid :   DXImageTransform.Microsoft.gradient (    
+		startColorstr = 
+		 '#a4b357', endColorstr =   '#75890c', GradientType =   0 );
+	border: 1px solid green;
+	/* background: aqua  url(images/ui-bg_highlight-soft_75_cccccc_1x100.png)
+		50% 50% repeat-x; */
+	color: red;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.loginDialog .ui-dialog-title {
+	color: red;
+}
+
+#suggestions {
+	border-radius: 8px 10px 10px 10px;
+	-moz-border-radius: 8px 10px 10px 10px;
+	-webkit-border-radius: 8px 10px 10px 10px;
+	border: 0px solid #000000;
+	position: absolute;
+	border: 1px solid;
+	width: 145px;
+	height: auto;
+	z-index: 10;
+	background-color: yellow;
+	margin-left: 800px;
+	margin-top: 100px;
+	display: none;
+}
+
+#suggestionImageDIv {
+	border-radius: 8px 10px 10px 10px;
+	-moz-border-radius: 8px 10px 10px 10px;
+	-webkit-border-radius: 8px 10px 10px 10px;
+	border: 0px solid #000000;
+	position: absolute;
+	border: 1px solid;
+	width: 145px; height : 150px;
+	z-index: 10;
+	/* background-color: yellow; */
+	margin-left: 650px;
+	margin-top: 100px;
+	display: none;
+	height: 150px;
+}
+
+.suggestion-label {
+	float: left;
+	position: relative;
+	width: 100%;
+	padding: 2px;
+	color: #0000CC;
+}
+
+.suggestion-label:HOVER {
+	width: 100%;
+	background-color: #33FFFF;
+}
+
+.addedText {
+	font-style: italic;
+	font-family: Parkavenue, cursive;
+	text-align: center;
+}
+
+.suggestionsImage {
+	position: absolute;
+	z-index: 10;
+	width: 145px;
+	height: 150px;
+}

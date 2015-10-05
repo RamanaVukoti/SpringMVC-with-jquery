@@ -1,0 +1,116 @@
+table {
+	border: medium;
+	border-color: yellow;
+}
+
+.tableId {
+	position: relative;
+	margin-top: 20%;
+	margin-left: 10%;
+	margin-right: 15%;
+}
+
+.tableId2 {
+	position: relative;
+	margin-top: 15%;
+	margin-left: -5%;
+}
+
+.buttonId2 {
+	position: absolute;
+	background-color: olive;
+	margin-left: 45%;
+	width: auto;
+}
+
+#loginImage {
+	position: absolute;
+	margin-left: 3px;
+	margin-top: -65px;
+	width: 110px;
+	height: 75px;
+}
+
+#loginHead {
+	position: absolute;
+	font-size: 20px;
+	color: red;
+	font-size: 20px;
+	color: red;
+	font-family: century gothic;
+	font-weight: bold;
+	margin-top: -12%;
+	margin-left: 23%;
+	font-weight: bold;
+}
+
+.loginImage2 {
+	position: absolute;
+	margin-top: 35px;
+	width: 110px;
+	height: 75px;
+}
+
+.loginHead2 {
+	font-size: 20px;
+	color: red;
+	font-family: century gothic;
+	font-weight: bold;
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 150px;
+}
+
+.textField {
+	border-color: aqua;
+}
+
+#messageDiv {
+	margin-top: 30%;
+	margin-left: 40%;
+	margin-right: 40%;
+	font-style: inherit;
+	text-align: center;
+	width: 30%;
+	background-color: #66FFB2;
+	font-size: large;
+}
+
+#messageDiv2 {
+	display: none;
+	margin-top: 30%;
+	margin-left: 25%;
+	width: 35%;
+	background-color: red;
+	font-size: large;
+}
+
+#tableId {
+	position: absolute;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 5%;
+}
+
+#dialogBox {
+	display: none;
+	color: Red;
+}
+
+#invalid {
+	display: none;
+	color: red;
+}
+
+#seesionValue {
+	position: absolute;
+	margin-left: 45%;
+	margin-top: 20%;
+	color: red;
+	background-color: aqua;
+	font-size: 10;
+}
+
+#logSuccess,#errorMesg {
+	display: none;
+}
